@@ -1,0 +1,413 @@
+/* Import Custom Font */
+/* 🎨 Import PokémonDP Font */
+@font-face {
+    font-family: 'PokemonDP';
+    src: url('pokemon-dp-pro.ttf') format('truetype');
+    font-display: swap;
+}
+
+.container{
+    max-width: 83%;
+}
+/* Pokémon Cards */
+.pokemon-card {
+    font-family: 'PokemonDP', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    color: white;
+    max-width: 200px; /* Increased card size */
+    display: inline-block;
+    margin: 16px;
+    overflow: hidden; /* Prevents content overflow */
+    min-width: 150px;
+}
+
+/* Pokémon Images */
+.pokemon-img {
+    width: 120px; /* Adjusted for better proportion */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* Adds space below the sprite */
+}
+
+/* Pokémon Name */
+.pokemon-name {
+    font-size: 20px; /* Increased for better readability */
+    margin: 12px 0; /* Added more margin to separate from image */
+    font-weight: bold;
+    display: block; /* Ensures it appears below the image */
+    text-transform:capitalize /* Capitalizes all letters */
+}
+
+/* Draft & PokeMMO Buttons */
+.draft-btn, .pokemmo-btn {
+    width: 100%;
+    font-size: 20px; /* Increased button text size */
+    padding: 8px 0;
+    border-radius: 6px; /* Smooth edges */
+}
+
+.draft-btn {
+    background-color: #F0D5D6 !important;
+    color: black !important;
+    border: none;
+}
+
+.draft-btn:hover {
+    background-color: #e6b7b9 !important;
+}
+
+.pokemmo-btn {
+    background-color: #B9F2FF !important;
+    color: black !important;
+    border: none;
+}
+
+.pokemmo-btn:hover {
+    background-color: #9cd3e0 !important;
+}
+
+/* Tier Container */
+.tier div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: inherit;
+    overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* General Body Styling */
+/* 🎨 Apply PokémonDP Font to Everything */
+body {
+    font-family: 'PokemonDP', sans-serif !important;
+    background: url('https://media.pocketmonsters.net/pages/51/Distort.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+/* 🎯 Navbar Styling */
+.navbar, .navbar-brand, .nav-link {
+    font-family: 'PokemonDP', sans-serif !important;
+    font-size: 2rem;
+}
+
+/* 🎯 Headings (H1, H2, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PokemonDP', sans-serif !important;
+}
+h1{
+    font-size: 4rem !important;
+}
+
+
+/* 🎯 Buttons */
+button, .btn {
+    font-family: 'PokemonDP', sans-serif !important;
+    font-size: 28px;
+}
+
+/* 🎯 Tables */
+table {
+    font-family: 'PokemonDP', sans-serif !important;
+}
+
+/* 🎯 Modals */
+.modal-content, .modal-title, .modal-body, .modal-footer {
+    font-family: 'PokemonDP', sans-serif !important;
+}
+
+/* 🎯 Dropdowns */
+select {
+    font-family: 'PokemonDP', sans-serif !important;
+}
+
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #ffd700;
+}
+
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffd700 !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Heading */
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 6px black;
+    font-size: 24px;
+}
+
+/* General Pokémon Display */
+.pokemon {
+    display: inline-block;
+    margin: 12px;
+    text-align: center;
+}
+
+
+/* Image Styling */
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Prevents images from exceeding container size */
+}
+
+/* Additional styling for team preview tables */
+.team-container {
+    max-width: 1500px; /* Increased width to span more of the screen */
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    color: #333;
+}
+
+.team-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 6px black;
+}
+
+table.team-table {
+    width: 367px; /* Fixed width */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Force each header cell and data cell to have fixed dimensions */
+/* 367px / 3 columns ≈ 122.33px per column, and each row is 142.55px high */
+table.team-table th,
+table.team-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    width: 122.33px;
+    height: 142.55px;
+}
+
+table.team-table th {
+    background-color: #f2f2f2;
+}
+
+table.team-table td.placeholder {
+    background-color: #ffe6e6;
+}
+/* 🎨 Budget Table Styling - Matches Pokémon Cards */
+#budget-table {
+    font-family: 'PokemonDP', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 80%;
+    margin: 20px auto; /* Center the table */
+    
+}
+
+
+#budget-table th, #budget-table td {
+    border: 2px solid #ffd700;
+    padding: 10px;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px black;
+    width: min-content;
+    font-size: 2rem;
+}
+
+#budget-table thead {
+    background-color: #222;
+}
+
+#budget-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#budget-table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#budget-table th {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+#budget-table td {
+    color: white;
+}
+
+/* 🔹 Animate budget updates */
+.budget-update {
+    animation: budget-flash 0.5s ease-in-out;
+}
+
+@keyframes budget-flash {
+    0% { background-color: #ffd700; color: black; }
+    100% { background-color: transparent; color: white; }
+}
+/* 🎨 Draft Modal Styling - Matches Budget Table */
+#draftModal .modal-content {
+    font-family: 'PokemonDP', sans-serif;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(255, 215, 0, 0.4); /* Gold glow */
+}
+
+/* 🔹 Modal Header */
+#draftModal .modal-header {
+    background-color: black;
+    border-bottom: 2px solid #ffd700;
+    color: #ffd700;
+    text-shadow: 1px 1px 4px black;
+}
+
+/* 🔹 Modal Body */
+#draftModal .modal-body {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 34px;
+}
+
+/* 🔹 Player Dropdown */
+#playerSelect {
+    font-family: 'PokemonDP', sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid #ffd700;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    font-size: 30px;
+}
+
+/* 🔹 Buttons */
+#draftModal .btn-primary {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    font-family: 'PokemonDP', sans-serif;
+}
+
+#draftModal .btn-primary:hover {
+    background-color: #e6c200;
+}
+
+#draftModal .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+}
+
+#draftModal .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* 🎨 Ensure Pokémon Icons Appear in a Row */
+#budget-table td {
+    white-space: nowrap; /* Prevents line breaks */
+}
+/* 🎨 Ensure Pokémon Icons Stay in a Single Row */
+.team-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* 🔹 Reduce space between icons */
+    white-space: nowrap; /* 🔹 Prevents wrapping */
+    min-height: 40px; /* 🔹 Ensures consistent row height */
+}
+
+/* 🎨 Pokémon Icon Styling */
+/* 🎨 Ensure Pokémon Icons Are Uniform in Size & Displayed Properly */
+/* 🎨 Ensure Pokémon Icons Stay the Same Size */
+/* 🎨 Fix Pokémon Icon Shrinking */
+.team-icon {
+    width: 54px !important;  /* ✅ Force exact width */
+    height: 52px  !important; /* ✅ Force exact height */
+    object-fit: contain;
+    flex-shrink: 0 !important; /* ✅ Prevent shrinking */
+    max-width: unset !important; /* ✅ Remove Bootstrap override */
+}
+.team-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap; /* Prevents wrapping */
+    min-height: 40px; /* Ensures row height remains constant */
+    overflow: visible; /* ✅ Prevents flexbox compression */
+}
+
+.pokemon-header {
+    margin-bottom: 8px; /* optional spacing from image */
+}
+
+.pokemon-name {
+    font-size: 20px;
+    margin: 0; /* ✅ Remove vertical space */
+    font-weight: bold;
+    display: block;
+    text-transform: capitalize;
+    line-height: 1.2; /* ✅ tighter line height */
+}
+
+.pokemon-types {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 4px; /* ✅ smaller gap above types */
+    margin-bottom: 0; /* ✅ eliminate bottom gap if unneeded */
+    flex-wrap: wrap;
+}
+
+.pokemon-types img.type-icon {
+    width: 54px;
+    height: 48px;
+    object-fit: contain;
+    padding-left: 0px; /* ✅ remove indent if not needed */
+}
+.pokemon-card.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .pokemon-card.disabled .draft-btn {
+    pointer-events: none;
+    background-color: grey !important;
+    color: white !important;
+    opacity: 0.7;
+  }
+  
+  .pokemon-card.disabled .pokemmo-btn {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  
+
+
+
+
