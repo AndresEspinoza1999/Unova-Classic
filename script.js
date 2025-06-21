@@ -12,15 +12,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-
 
 // 🔥 Firebase Configuration (Your Credentials)
 const firebaseConfig = {
- apiKey: "AIzaSyBAglAu7aDHVF68Szg_eyaIdIuXXIzwPJM",
+  apiKey: "AIzaSyBAglAu7aDHVF68Szg_eyaIdIuXXIzwPJM",
   authDomain: "sc9-draft.firebaseapp.com",
   databaseURL: "https://sc9-draft-default-rtdb.firebaseio.com",
   projectId: "sc9-draft",
   storageBucket: "sc9-draft.firebasestorage.app",
   messagingSenderId: "624184902731",
   appId: "1:624184902731:web:333821678a86edb143f9ce",
-  measurementId: "G-H4XCMF59TL",
-
+  measurementId: "G-H4XCMF59TL"
 };
 
 // 🔥 Initialize Firebase
