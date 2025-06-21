@@ -405,7 +405,7 @@ async function fetchPokemonData() {
   try {
     console.log("Fetching Pokémon data...");
 
-    const response = await fetch("https://pokeapi.co/api/v2/pokedex/22");
+    const response = await fetch("https://pokeapi.co/api/v2/pokedex/9");
     if (!response.ok) throw new Error("Failed to fetch Pokédex data");
 
     const data = await response.json();
