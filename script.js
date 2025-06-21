@@ -12,13 +12,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-
 
 // 🔥 Firebase Configuration (Your Credentials)
 const firebaseConfig = {
-  apiKey: "AIzaSyDOKTrTetFJmMI8_KyDZ-ex89ccXFEtw4E",
-  authDomain: "unova-classic.firebaseapp.com",
-  projectId: "unova-classic",
-  storageBucket: "unova-classic.firebasestorage.app",
-  messagingSenderId: "15750466353",
-  appId: "1:15750466353:web:5628974516af7b04ac7e10",
-  measurementId: "G-TVG122Q8WF"
+ apiKey: "AIzaSyBAglAu7aDHVF68Szg_eyaIdIuXXIzwPJM",
+  authDomain: "sc9-draft.firebaseapp.com",
+  databaseURL: "https://sc9-draft-default-rtdb.firebaseio.com",
+  projectId: "sc9-draft",
+  storageBucket: "sc9-draft.firebasestorage.app",
+  messagingSenderId: "624184902731",
+  appId: "1:624184902731:web:333821678a86edb143f9ce",
+  measurementId: "G-H4XCMF59TL",
 
 };
 
