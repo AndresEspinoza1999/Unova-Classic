@@ -87,7 +87,7 @@
 body {
     font-family: 'PokemonDP', sans-serif !important;
     background: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/04/Black-2-White-2-Unova-map.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: fit;
     color: white;
     text-shadow: 1px 1px 4px black;
 }
